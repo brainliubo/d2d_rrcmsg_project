@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8B86DF4F-4F38-4FE2-9CC4-A21D85A11972}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>d2d_mib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\asn1c_inc;E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc;D:\vs2010_project\ASN1C_0929_forD2D\inc\rrc_inc;D:\vs2010_project\ASN1C_0929_forD2D\inc\asn1c_inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;ASN_DISABLE_OER_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\asn_application.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\asn_bit_data.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\asn_codecs_prim.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\asn_internal.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\asn_random_fill.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\ber_decoder.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\ber_tlv_length.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\ber_tlv_tag.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\BIT_STRING.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\constraints.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\constr_CHOICE.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\constr_SEQUENCE.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\constr_TYPE.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\der_encoder.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\INTEGER.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\NativeEnumerated.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\NativeInteger.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\OCTET_STRING.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\OPEN_TYPE.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\per_decoder.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\per_encoder.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\per_opentype.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\per_support.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\Rectangle.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\xer_decoder.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\xer_encoder.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\asn1c_src\xer_support.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\rrc_src\P-Max.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\rrc_src\PDCCH-ConfigCommon.c" />
+    <ClCompile Include="..\..\ASN1C_0929_forD2D\src\rrc_src\SIB-PDCCH-Config.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\asn1c_src\asn_SEQUENCE_OF.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\asn1c_src\asn_SET_OF.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\asn1c_src\BOOLEAN.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\asn1c_src\constr_SEQUENCE_OF.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\asn1c_src\constr_SET_OF.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\Carrier.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\DL-AM-RLC.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\DL-UM-RLC.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\DRB-Identity.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\DRB-ToAddMod.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\DRB-ToAddModList.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\DRB-ToReleaseList.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\LogicChannelConfig.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\LOGICCHENNEL-Identity.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\MacConfig.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\MasterInformationBlock.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\P-Max.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\PdschDedicateConfig.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\PollByte-r14.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\PollByte.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\PollPDU-v1310.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\PollPDU.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\PuschHoppingConfig.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\RadioResourceConfigCommonSIB.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\RadioResourceConfigDedicate.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\RLC-Config.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\RRCConnectionRelease.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\RRCConnectionRequest.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\RRCConnectionSetup.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\SN-FieldLength.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\SRB-Identity.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\SRB-ToAddMod.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\SRB-ToAddModList.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\SystemInformationBlockType1.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\T-PollRetransmit.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\T-Reordering.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\T-StatusProhibit.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\TDD-Config.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\UL-AM-RLC.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\UL-UM-RLC.c" />
+    <ClCompile Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\src\UlRefSigConfig-PUSCH.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="rrc_msg_asn1c_func.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\asn_application.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\asn_bit_data.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\asn_codecs.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\asn_codecs_prim.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\asn_internal.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\asn_ioc.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\asn_random_fill.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\asn_system.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\ber_decoder.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\ber_tlv_length.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\ber_tlv_tag.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\BIT_STRING.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\constraints.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\constr_CHOICE.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\constr_SEQUENCE.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\constr_TYPE.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\der_encoder.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\INTEGER.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\NativeEnumerated.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\NativeInteger.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\OCTET_STRING.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\OPEN_TYPE.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\per_decoder.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\per_encoder.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\per_opentype.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\per_support.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\Rectangle.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\xer_decoder.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\xer_encoder.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\asn1c_inc\xer_support.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\rrc_inc\P-Max.h" />
+    <ClInclude Include="..\..\ASN1C_0929_forD2D\inc\rrc_inc\SIB-PDCCH-Config.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\asn1c_inc\asn_SEQUENCE_OF.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\asn1c_inc\asn_SET_OF.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\asn1c_inc\BOOLEAN.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\asn1c_inc\constr_SEQUENCE_OF.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\asn1c_inc\constr_SET_OF.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\Carrier.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\DL-AM-RLC.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\DL-UM-RLC.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\DRB-Identity.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\DRB-ToAddMod.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\DRB-ToAddModList.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\DRB-ToReleaseList.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\LogicChannelConfig.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\LOGICCHENNEL-Identity.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\MacConfig.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\MasterInformationBlock.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\P-Max.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\PdschDedicateConfig.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\PollByte-r14.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\PollByte.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\PollPDU-v1310.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\PollPDU.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\PuschHoppingConfig.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\RadioResourceConfigCommonSIB.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\RadioResourceConfigDedicate.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\RLC-Config.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\RRCConnectionRelease.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\RRCConnectionRequest.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\RRCConnectionSetup.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\SN-FieldLength.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\SRB-Identity.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\SRB-ToAddMod.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\SRB-ToAddModList.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\SystemInformationBlockType1.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\T-PollRetransmit.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\T-Reordering.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\T-StatusProhibit.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\TDD-Config.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\UL-AM-RLC.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\UL-UM-RLC.h" />
+    <ClInclude Include="E:\work\eclipse_workspace\D2D_project_github\D2D_project\protocol\RRC\inc\UlRefSigConfig-PUSCH.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

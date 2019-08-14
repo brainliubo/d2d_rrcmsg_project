@@ -1,0 +1,98 @@
+﻿生成启动时间为 2019/8/14 16:11:41。
+     1>项目“D:\vs2010_project\d2d_mib\d2d_mib\d2d_mib.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\d2d_mib.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D ASN_DISABLE_OER_SUPPORT /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
+         main.c
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\vs2010_project\d2d_mib\Debug\d2d_mib.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\d2d_mib.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\vs2010_project\d2d_mib\Debug\d2d_mib.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\vs2010_project\d2d_mib\Debug\d2d_mib.lib" /MACHINE:X86 Debug\d2d_mib.exe.embed.manifest.res
+         Debug\asn_application.obj
+         Debug\asn_bit_data.obj
+         Debug\asn_codecs_prim.obj
+         Debug\asn_internal.obj
+         Debug\asn_random_fill.obj
+         Debug\ber_decoder.obj
+         Debug\ber_tlv_length.obj
+         Debug\ber_tlv_tag.obj
+         Debug\BIT_STRING.obj
+         Debug\constraints.obj
+         Debug\constr_CHOICE.obj
+         Debug\constr_SEQUENCE.obj
+         Debug\constr_TYPE.obj
+         Debug\der_encoder.obj
+         Debug\INTEGER.obj
+         Debug\NativeEnumerated.obj
+         Debug\NativeInteger.obj
+         Debug\OCTET_STRING.obj
+         Debug\OPEN_TYPE.obj
+         Debug\per_decoder.obj
+         Debug\per_encoder.obj
+         Debug\per_opentype.obj
+         Debug\per_support.obj
+         Debug\Rectangle.obj
+         Debug\xer_decoder.obj
+         Debug\xer_encoder.obj
+         Debug\xer_support.obj
+         "Debug\P-Max.obj"
+         "Debug\PDCCH-ConfigCommon.obj"
+         "Debug\SIB-PDCCH-Config.obj"
+         Debug\asn_SEQUENCE_OF.obj
+         Debug\asn_SET_OF.obj
+         Debug\BOOLEAN.obj
+         Debug\constr_SEQUENCE_OF.obj
+         Debug\constr_SET_OF.obj
+         Debug\Carrier.obj
+         "Debug\DL-AM-RLC.obj"
+         "Debug\DL-UM-RLC.obj"
+         "Debug\DRB-Identity.obj"
+         "Debug\DRB-ToAddMod.obj"
+         "Debug\DRB-ToAddModList.obj"
+         "Debug\DRB-ToReleaseList.obj"
+         Debug\LogicChannelConfig.obj
+         "Debug\LOGICCHENNEL-Identity.obj"
+         Debug\MacConfig.obj
+         Debug\MasterInformationBlock.obj
+         "Debug\P-Max.obj"
+         Debug\PdschDedicateConfig.obj
+         "Debug\PollByte-r14.obj"
+         Debug\PollByte.obj
+         "Debug\PollPDU-v1310.obj"
+         Debug\PollPDU.obj
+         Debug\PuschHoppingConfig.obj
+         Debug\RadioResourceConfigCommonSIB.obj
+         Debug\RadioResourceConfigDedicate.obj
+         "Debug\RLC-Config.obj"
+         Debug\RRCConnectionRelease.obj
+         Debug\RRCConnectionRequest.obj
+         Debug\RRCConnectionSetup.obj
+         "Debug\SN-FieldLength.obj"
+         "Debug\SRB-Identity.obj"
+         "Debug\SRB-ToAddMod.obj"
+         "Debug\SRB-ToAddModList.obj"
+         Debug\SystemInformationBlockType1.obj
+         "Debug\T-PollRetransmit.obj"
+         "Debug\T-Reordering.obj"
+         "Debug\T-StatusProhibit.obj"
+         "Debug\TDD-Config.obj"
+         "Debug\UL-AM-RLC.obj"
+         "Debug\UL-UM-RLC.obj"
+         "Debug\UlRefSigConfig-PUSCH.obj"
+         Debug\main.obj
+         Debug\rrc_msg_asn1c_func.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\d2d_mib.exe.embed.manifest" /manifest Debug\d2d_mib.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         d2d_mib.vcxproj -> D:\vs2010_project\d2d_mib\Debug\d2d_mib.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\d2d_mib.unsuccessfulbuild”。
+         正在对“Debug\d2d_mib.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\vs2010_project\d2d_mib\d2d_mib\d2d_mib.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.61
